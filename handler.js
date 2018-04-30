@@ -1,5 +1,5 @@
 import ImageAnalyser from './lib/imageAnalyser'
-import { save } from './lib/fetchImage'
+import { save } from './lib/saveImage'
 import { log } from 'ruucm-util'
 
 export const hello = async (event, context, callback) => {
@@ -24,13 +24,30 @@ const message = ({ time, ...rest }) => new Promise((resolve, reject) =>
  * Image Analysis
  */
 export const imageAnalysis = async (event, context, callback) => {
+
+  let imageName = '';
+
+
+  // log('event', event)
+
+  const query = event.queryStringParameters || {};
+  log('query', query)
+
+  // log('event', event)
+
   log('start save Image 😀')
-  save('https://avatars0.githubusercontent.com/u/29548023?s=460&v=4')
+  if (query.url)
+    imageName = save(query.url)
+  else
+    log('no url')
+
+  log('imageName2', imageName)
+
   const data = JSON.parse(event.body);
 
   const s3Config = {
     bucket: 'anyfiles-for-ruucm',
-    imageName: 'test-item-03.jpg',
+    imageName: imageName,
   };
   return ImageAnalyser
     .getImageLabels(s3Config)
