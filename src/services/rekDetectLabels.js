@@ -3,7 +3,7 @@ import AWS from 'aws-sdk'
 AWS.config.update({region:'us-east-1'});
 const rek = new AWS.Rekognition();
 
-export default class ImageAnalyser {
+export default class rekDetectLabels {
   static getImageLabels(s3Config) {
     const params = {
       Image: {

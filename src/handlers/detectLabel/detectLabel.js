@@ -1,5 +1,5 @@
 import { save } from '../../services/saveImage'
-import ImageAnalyser from '../../services/imageAnalyser'
+import rekDetectLabels from '../../services/rekDetectLabels'
 /**
  *  Image Analysis
  */
@@ -17,7 +17,7 @@ const detectLabel = async (event, context, callback) => {
     bucket: 'anyfiles-for-ruucm',
     imageName: imageName,
   };
-  return ImageAnalyser
+  return rekDetectLabels
     .getImageLabels(s3Config)
     .then((labels) => {
       const response = {
