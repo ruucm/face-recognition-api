@@ -41,9 +41,9 @@ functions:
       - http:
           path: hello
           method: get
-  imageAnalysis:
-    handler: handler.imageAnalysis
+  detectLabel:
+    handler: handler.detectLabel
     events:
       - http:
-          path: analysis
+          path: detectLabel
           method: get
