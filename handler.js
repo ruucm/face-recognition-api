@@ -1,11 +1,6 @@
-import { log } from 'ruucm-util'
-
 import helloFunction from './src/handlers/hello'
 import detectLabelFunction from './src/handlers/detectLabel'
 import detectFaceFunction from './src/handlers/detectFace'
-
-
-
 
 /**
  *  Handlers
