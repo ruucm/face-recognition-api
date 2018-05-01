@@ -47,3 +47,9 @@ functions:
       - http:
           path: detectLabel
           method: get
+  detectFace:
+    handler: handler.detectFace
+    events:
+      - http:
+          path: detectFace
+          method: get
