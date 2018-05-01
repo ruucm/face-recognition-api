@@ -30,7 +30,7 @@
     "aws-sdk": "^2.229.1",
     "babel-runtime": "^6.26.0",
     "node-fetch": "^2.1.2",
-    "ruucm-util": "^0.9.0",
+    "ruucm-util": "^0.10.0",
     "source-map-support": "^0.4.18"
   }
 }
