@@ -2,7 +2,7 @@
 
 ## What's this for?
 
-face-recognition-api
+Face Recognition API using Amazon Rekognition & Serverless ⚡️
 
 ### Test Locally
 
