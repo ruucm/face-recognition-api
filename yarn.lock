@@ -3913,9 +3913,9 @@ run-queue@^1.0.0, run-queue@^1.0.3:
   dependencies:
     aproba "^1.1.1"
 
-ruucm-util@^0.7.0:
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/ruucm-util/-/ruucm-util-0.7.0.tgz#34be6b8cb198c1c98bc3a4bb4d6fa04639dcb155"
+ruucm-util@^0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/ruucm-util/-/ruucm-util-0.9.0.tgz#cf27ff99456f71967f2978b702d0a9b2eb1aa36c"
 
 safe-buffer@^5.0.1, safe-buffer@^5.1.0, safe-buffer@^5.1.1, safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   version "5.1.2"
